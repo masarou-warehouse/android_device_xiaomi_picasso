@@ -37,3 +37,5 @@ type hal_touchfeature_default_exec, exec_type, vendor_file_type, file_type;
 type per_boot_file, file_type, data_file_type, core_data_file_type;
 
 type vendor_debugfs_clk, debugfs_type, fs_type;
+
+type per_boot_file, file_type, data_file_type, core_data_file_type;
