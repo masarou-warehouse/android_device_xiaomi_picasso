@@ -1,3 +1,5 @@
+allow system_app sysfs_kprofiles:file rw_file_perms;
+
 hal_client_domain(system_app, hal_mlipay)
 
 get_prop(system_app, qemu_hw_prop)
