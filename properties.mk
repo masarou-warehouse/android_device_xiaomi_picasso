@@ -298,12 +298,6 @@ debug.hwui.renderer=opengl \
 debug.hwui.use_hint_manager=true \
 debug.hwui.target_cpu_time_percent=30
 
-# IMS
-PRODUCT_SYSTEM_PROPERTIES += \
-persist.dbg.volte_avail_ovr=1 \
-persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=1
-
 # Keystore
 PRODUCT_VENDOR_PROPERTIES += \
 ro.hardware.keystore_desede=true
