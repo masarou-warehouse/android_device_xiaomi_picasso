@@ -221,7 +221,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 	vendor.display.qdcm.disable_factory_mode=1 \
 	vendor.display.qdcm.mode_combine=1 \
 	vendor.display.use_layer_ext=1 \
-	vendor.display.use_smooth_motion=0
+	vendor.display.use_smooth_motion=0 \
+	debug.sf.auto_latch_unsignaled=false
 
 PRODUCT_SYSTEM_PROPERTIES += \
 	debug.gralloc.gfx_ubwc_disable=0 \
