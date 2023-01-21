@@ -315,7 +315,7 @@ ro.config.low_ram = false
 
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
-debug.stagefright.ccodec=4 \
+debug.stagefright.ccodec=1 \
 debug.stagefright.omx_default_rank=0
 
 PRODUCT_SYSTEM_PROPERTIES += \
