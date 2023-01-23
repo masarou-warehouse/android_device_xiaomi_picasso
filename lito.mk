@@ -112,8 +112,8 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 # Audio Daemon
-PRODUCT_PACKAGES += audioadsprpcd
-PRODUCT_PACKAGES += vendor.qti.audio-adsprpc-service.rc
+PRODUCT_PACKAGES += \
+    audioadsprpcd
 
 # Audio Alsa Extensions
 PRODUCT_PACKAGES += \
