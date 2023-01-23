@@ -115,7 +115,7 @@ audio.sys.mute.latency.factor=2 \
 audio.sys.noisy.broadcast.delay=500 \
 audio.sys.offload.pstimeout.secs=3 \
 audio.sys.routing.latency=0 \
-ro.af.client_heap_size_kbyte=7168 \
+ro.af.client_heap_size_kbyte=7168
 
 # Better RAM
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -167,9 +167,11 @@ bluetooth.profile.pbap.server.enabled=true \
 bluetooth.profile.sap.server.enabled=true
 
 # Blurs
+PRODUCT_VENDOR_PROPERTIES += \
 ro.surface_flinger.supports_background_blur=1
 
 # Disable blur on app launch
+PRODUCT_VENDOR_PROPERTIES += \
 ro.launcher.blur.appLaunch=1
 
 # Camera
@@ -191,13 +193,13 @@ ro.soc.model=SM7250
 
 # Crypto
 PRODUCT_VENDOR_PROPERTIES += \
-ro.crypto.volume.filenames_mode=aes-256-cts \
+ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik
 PRODUCT_VENDOR_PROPERTIES += \
 dalvik.vm.dex2oat64.enabled=true \
-dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7 \
-dalvik.vm.dex2oat-threads 6
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,7 \
+dalvik.vm.dex2oat-threads=6
 
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
@@ -249,7 +251,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # FM
 PRODUCT_VENDOR_PROPERTIES += \
-vendor.hw.fm.init=0 \
+vendor.hw.fm.init=0
 
 # Fwk detect
 PRODUCT_VENDOR_PROPERTIES += \
@@ -311,7 +313,7 @@ ro.hardware.keystore_desede=true
 
 # LMKD
 PRODUCT_SYSTEM_PROPERTIES += \
-ro.config.low_ram = false
+ro.config.low_ram=false
 
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
@@ -398,7 +400,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 ro.telephony.default_network=33,33
 
 #system prop for RmNet Data
-PRODUCT_VENDOR_PROPERTIES \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.rmnet.data.enable=true \
 persist.data.wda.enable=true \
 persist.data.df.dl_mode=5 \
