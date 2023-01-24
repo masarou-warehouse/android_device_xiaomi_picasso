@@ -41,8 +41,7 @@ set_prop(hal_fingerprint_default, vendor_fp_prop)
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
 
-
 set_prop(hal_fingerprint_default, vendor_fp_prop)
-allow hal_fingerprint_default system_data_root_file:dir rw_dir_perms;
+allow hal_fingerprint_default system_data_root_file:dir { read open search };
 allow hal_fingerprint_default media_rw_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default media_rw_data_file:file rw_file_perms;
