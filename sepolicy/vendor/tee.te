@@ -8,9 +8,17 @@ allow tee {
 
 allow tee mnt_vendor_file:dir rw_dir_perms;
 allow tee tmpfs:dir rw_dir_perms;
+
 allow tee vendor_data_file:dir rw_dir_perms;
 allow tee vendor_data_file:dir create_dir_perms;
 allow tee vendor_data_file:file rw_file_perms;
 allow tee vendor_data_file:file { getattr link unlink rename };
 allow tee vendor_data_file:file create_file_perms;
+
+allow tee vendor_fingerprint_data_file:file rw_file_perms;
+allow tee vendor_fingerprint_data_file:dir rw_dir_perms;
+allow tee vendor_fingerprint_data_file:file create_file_perms;
+allow tee vendor_fingerprint_data_file:dir create_dir_perms;
+allow tee vendor_fingerprint_data_file:file { getattr link unlink rename };
+
 allow tee tmpfs:dir { create read write };
