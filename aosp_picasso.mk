@@ -11,15 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_picasso
+PRODUCT_NAME := aosp_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MODEL := Redmi K30 5G
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_SUPPORTS_QUICK_TAP := true
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
