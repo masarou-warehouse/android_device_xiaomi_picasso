@@ -30,8 +30,6 @@ type vendor_sysfs_iio, fs_type, sysfs_type;
 
 type thermal_link_device, dev_type;
 
-type turbo_adapter, domain, coredomain, system_suspend_internal_server;
-
 type hal_touchfeature_default_exec, exec_type, vendor_file_type, file_type;
 
 type per_boot_file, file_type, data_file_type, core_data_file_type;
